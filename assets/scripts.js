@@ -1,6 +1,6 @@
 // Fetch weather info
 const apiKey = '0fc0a8002a8e4a26bf2171723242104';
-const apiUrl = `http://api.weatherapi.com/v1/current.json?key=0fc0a8002a8e4a26bf2171723242104&q=Calgary&aqi=no`;
+const apiUrl = `https://api.weatherapi.com/v1/current.json?key=0fc0a8002a8e4a26bf2171723242104&q=Calgary&aqi=no`;
 
 async function fetchWeather() {
     try {
