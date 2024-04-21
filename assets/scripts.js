@@ -40,3 +40,23 @@ moreBtn.addEventListener('click', ()=>{
             }
         });
     }
+
+// Fetch weather info
+    const apiKey = '0fc0a8002a8e4a26bf2171723242104';
+    const apiUrl = `http://api.weatherapi.com/v1/current.json?key=0fc0a8002a8e4a26bf2171723242104&q=Calgary&aqi=no`;
+    
+    async function fetchWeather() {
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            const weatherInfo = `${data.current.temp_c}°C`;
+            document.querySelector('.weather-info').textContent = weatherInfo;
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+            document.querySelector('.weather-info').textContent = 'Weather unavailable';
+        }
+    }
+    
+    // Call the function to fetch weather data when the page loads
+    fetchWeather();
+    
