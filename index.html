@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Happy Bakery</title>
+    <link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Bee Happy Bakery</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#" onclick="showPopup('Phone')">Phone</a>
+                    <a href="#" onclick="showPopup('Email')">Email</a>
+                    <a href="#" onclick="showPopup('Address')">Address</a>
+                    <a href="contact.html">Contact form</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero-banner">
+        <div class="overlay">
+            <p>Opening Hours: Mon-Sun 8:00 AM - 8:00 PM</p>
+            <p>Location: 123 Bakery Street, Cityville</p>
+        </div>
+    </div>
+</header>
+
+<section class="content">
+    <img src="assets/Content.jpg" alt="Content Image" class="content-image">
+    <div class="content-text">
+        <h2>Our Story</h2>
+        <p>
+            Welcome to <i>Bee Happy Bakery</i>, a place where traditional baking meets modern finesse.<br>
+            Our bakery was founded in 1990, born from a passion for authentic, handcrafted bread and pastries.<br>
+            From our humble beginnings in the heart of Calgary, we have grown into a beloved institution,<br>
+            serving the community with freshly baked goods that warm the soul.<br>
+
+            <br>Our founder started with a simple mission: to bring the artisanal baking techniques to Calgary.<br>
+            With recipes passed down through generations and a commitment to quality ingredients,<br> 
+            <i>Bee Happy Bakery</i> quickly became more than just a bakery; it became a story of family, tradition, and community.
+        </p>
+
+        <h2>Group Orders</h2>
+        <p>
+            At <i>Bee Happy Bakery</i>, we believe in sharing the joy of freshly baked goods.<br>
+            Whether you're planning a corporate event, a family gathering, or a community celebration,<br>
+            our bakery is here to cater to your needs with our selection of handcrafted bread, pastries, and cakes.
+        </p>
+        <div id="more">
+          <h2>How to Order</h2>
+          <p>
+            To order from <i>Bee Happy Bakery</i>, please explore our menu and select your desired items.<br>
+            Contact us by email or phone with your choices at least 3 days in advance.<br> 
+            Specify any dietary restrictions or custom requests. Orders can be picked up at our bakery or delivered.<br> 
+            For large or special orders, direct contact is encouraged to ensure we meet all your needs.
+          </p>
+        </div>
+        
+        <button id="moreBtn">More</button>
+      </div>
+  
+    
+</section>
+
+<section class="container accordion-container">
+    <h2>Click to our best sellers</h2>
+    <button class="accordion">Nok-cha Bread</button>
+    <div class="panel">
+        <p>
+            'Nok-cha' means green tea in Korean.
+            Savor the unique fusion of flavors with our Green Tea Bread, a soft, moist loaf infused with the subtle aroma and taste of premium green tea.
+            This bread offers a gentle sweetness, making it a perfect companion for your afternoon tea or coffee.
+        </p>
+    </div>
+
+    <button class="accordion">Hongkong Egg Tart</button>
+    <div class="panel">
+        <p>
+            Experience a classic delight with our Hong Kong Egg Tarts, featuring a flaky, buttery crust filled with a silky, smooth egg custard that's just the right amount of sweet. Each bite takes you on a journey to the bustling streets of Hong Kong.
+        </p>
+    </div>
+
+    <button class="accordion">Signature Cheese Cake</button>
+    <div class="panel">
+        <p>
+            Indulge in the rich and creamy sensation of our Signature Cheese Cake, a velvety dessert that balances the tang of cream cheese with a sweet, crumbly base. It's a timeless treat that's sure to satisfy any cheesecake aficionado.
+        </p>
+    </div>
+</section>
+
+<section class="try-your-luck">
+  <h2>Pick your dessert today</h2>
+  <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+          <div class="card-front">
+              <p>Click to reveal</p>
+          </div>
+          <div class="card-back">
+            <img src="assets/basque.jpg" alt="Basque Cheese Cake Image">
+        </div>
+      </div>
+  </div>
+  <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+          <div class="card-front">
+              <p>Click to reveal</p>
+          </div>
+          <div class="card-back">
+            <img src="assets/tiramisu.jpg" alt="Basque Cheese Cake Image">
+        </div>
+      </div>
+  </div>
+  <div class="card" onclick="flipCard(this)">
+      <div class="card-inner">
+          <div class="card-front">
+              <p>Click to reveal</p>
+          </div>
+          <div class="card-back">
+            <img src="assets/matcha-roll.jpg" alt="Basque Cheese Cake Image">
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="container footer-container">
+  <div class="footer">
+      <div class="footer-column info">
+          <h3>Contact Information</h3>
+          <p>Bee Happy Bakery</p>
+          <p>Address: Downtown, Calgary</p>
+          <p>Phone: +1 587-123-4567</p>
+          <p>Email: bibi@example.com</p>
+      </div>
+      <div class="footer-column links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#">Home ></a></li>
+              <li><a href="#">Special recipes ></a></li>
+              <li><a href="#">Interesting facts about us ></a></li>
+          </ul>
+      </div>
+      <div class="footer-column map-container">
+          <h3>Location</h3>
+          <div class="footer-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20065.808264871608!2d-114.06806749999998!3d51.04891405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffb86200597%3A0x10c42af1e7df241e!2z7JWM67KE7YOAIOy6mOqxsOumrCDri6TsmrTtg4DsmrQ!5e0!3m2!1sko!2sca!4v1710961677762!5m2!1sko!2sca"
+                class="map-iframe" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2024 Bee Happy Bakery. All rights reserved.
+  </div>
+</section>
+
+<script src="assets/scripts.js"></script>
+
+</body>
+</html>

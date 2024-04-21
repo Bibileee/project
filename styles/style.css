@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+body {
+  background-color: #dfd9b0;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.backgroundImage {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  display: flex;
+}
+
+.backgroundHeading {
+  position: absolute;
+  align-items: center;
+  top: 0;
+  color: #f1f1f1;
+  width: 100%;
+  height: 50%;
+  color: white;
+  text-align: center;
+}
+
+.backgroundHeading h1 {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 7vw;
+  font-display: swap;
+}
+
+.backgroundHeading h2 {
+  font-size: 2vw;
+}
+
+.backgroundHeading p {
+  font-size: 2vw;
+}
+
+.logo {
+  width: 20%;
+}
+
+.remove-assignment-content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*hero*/
+.hero-container {
+  color: #fff;
+}
+.overlay {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/*content*/
+.content-container {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.intro-text {
+  text-align: justify;
+}
+
+.intro-text h2 {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#more h2 {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#more {
+  display: none;
+}
+
+.content-img {
+  width: 25%; /* Adjust the width as needed */
+  margin-right: 20px;
+  float: left;
+  margin-right: 20px;
+}
+
+/*video*/
+.video {
+  padding-bottom: 50px;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.video-container iframe {
+  width: 60%;
+  height: 100%;
+}
+
+/*card*/
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vn;
+  font-size: 100px;
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-container h2 {
+  font-size: 100px;
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-container p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  border: 1px solid #f3940e;
+  background-color: #f9f9f9;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card img {
+  border-bottom: 0.25rem solid #f3940e;
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: auto;
+  width: 100%;
+}
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: #6e6d42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #413e17;
+}
+
+.accordion-container {
+  background-color: #dfd9b0;
+  height: 250px;
+  margin-top: 50px;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+/* Style the accordion buttons */
+.accordion {
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s ease;
+  line-height: 1;
+}
+
+.accordion span {
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-container h2 {
+  font-size: 30px;
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Change the background color of the button on hover */
+.accordion:hover {
+  background-color: #ddd;
+}
+
+/* Style the accordion panel */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+/* Style the paragraph inside the panel */
+.panel p {
+  margin-top: 0;
+}
+
+/* Show the panel when the accordion button is clicked (active) */
+.active,
+.accordion.active {
+  background-color: #ccc;
+}
+
+.active + .panel {
+  display: block;
+}
+
+.footer-container {
+  margin-top: 200px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8f9fa; /* Or any color you prefer */
+}
+
+.footer-column {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Contact Information and Quick Links columns */
+.footer-column.info,
+.footer-column.links {
+  flex: 1; /* Allows flexibility in sizing, taking up 1 portion */
+  min-width: 150px;
+}
+
+/* Map column - takes up a larger portion of the footer */
+.footer-column.map-container {
+  flex: 2; /* Takes up twice as much space as the other columns */
+  min-width: 300px;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: auto;
+}
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Style for the footer links list */
+.footer-column.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column.links ul li a {
+  text-decoration: none;
+  color: #000; /* Or any color you prefer */
+  line-height: 2;
+}
+
+.footer-column h3 {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for smaller screens */
+
+@media (max-width: 768px) {
+  .hero-container {
+    margin-bottom: 5%;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .backgroundHeading {
+    position: absolute;
+    top: 0;
+    color: #f1f1f1;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    color: white;
+    text-align: center;
+  }
+
+  .backgroundHeading h1 {
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .backgroundHeading h1 {
+    font-size: 7vw;
+  }
+
+  .backgroundHeading h2 {
+    font-size: 4vw;
+  }
+
+  .backgroundHeading p {
+    font-size: 4vw;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .content-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content-img {
+    width: 100%; /* Adjust the width as needed */
+    float: left;
+  }
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    font-size: 100px;
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card-container h2 {
+    font-size: 100px;
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card-container p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card {
+    border: 1px solid #f3940e;
+    background-color: #f9f9f9;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .card img {
+    border-bottom: 0.25rem solid #f3940e;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 100%;
+  }
+
+  /*video*/
+  .video {
+    padding-bottom: 50px;
+  }
+
+  .youtube-video {
+    border: 0;
+  }
+
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 90%;
+    padding: 0;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 80%;
+  }
+
+  .accordion-container {
+    background-color: #dfd9b0;
+    height: 250px;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 400px;
+  }
+  .accordion {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    padding: 12px;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    line-height: 1;
+  }
+
+  .panel {
+    padding: 0 2%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: none;
+    width: 86%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .footer-container {
+    padding: 0;
+    width: 85%;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer-column {
+    flex-basis: 100%; /* Full width of the container */
+    max-width: 100%; /* Full width of the container */
+  }
+
+  .footer-column.map-container,
+  .footer-column.info,
+  .footer-column.links {
+    order: 2; /* Put the map and columns above the copyright line */
+  }
+
+  .footer-bottom {
+    order: 3; /* Ensures this is at the bottom */
+  }
+
+  .footer-map iframe {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
+}
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+  .hero-container {
+    margin-bottom: 5%;
+    height: 50vh;
+    width: 100%;
+  }
+
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+
+  .backgroundHeading {
+    position: absolute;
+    top: 0;
+    color: #f1f1f1;
+    margin: 0;
+    width: 100%;
+    height: 50%;
+    color: white;
+    text-align: center;
+  }
+
+  .backgroundHeading h1 {
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .backgroundHeading h1 {
+    font-size: 7vw;
+  }
+
+  .backgroundHeading h2 {
+    font-size: 4vw;
+  }
+
+  .backgroundHeading p {
+    font-size: 4vw;
+  }
+
+  .logo {
+    width: 30%;
+  }
+  .content-container {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .content-img {
+    width: 90%; /* Adjust the width as needed */
+    float: left;
+  }
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    font-size: 100px;
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card-container h2 {
+    font-size: 100px;
+    font-family: 'Madimi One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .card-container p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .card {
+    border: 1px solid #f3940e;
+    background-color: #f9f9f9;
+    border-radius: 0.25rem;
+    box-shadow: 0rem 0.125rem 1.5rem rgb(0 0 0 / 12%);
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .card img {
+    border-bottom: 0.25rem solid #f3940e;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 100%;
+  }
+
+  /*video*/
+  .video {
+    padding-bottom: 50px;
+  }
+
+  .video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 90%;
+    padding: 0;
+  }
+
+  .video-container iframe {
+    width: 100%;
+    height: 80%;
+  }
+
+  .accordion-container {
+    background-color: #dfd9b0;
+    height: 250px;
+    width: 90%;
+    padding: 0;
+    margin-bottom: 400px;
+  }
+  .accordion {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: pointer;
+    padding: 12px;
+    width: 90%;
+    height: auto;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.4s ease;
+    line-height: 1;
+  }
+
+  .panel {
+    padding: 0 2%;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border: none;
+    width: 86%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .footer-container {
+    padding: 0;
+    width: 85%;
+  }
+
+  .footer {
+    align-items: center;
+  }
+
+  .footer-column {
+    flex-basis: 100%; /* Full width of the container */
+    max-width: 100%; /* Full width of the container */
+  }
+
+  .footer-column.map-container,
+  .footer-column.info,
+  .footer-column.links {
+    order: 2; /* Put the map and columns above the copyright line */
+  }
+
+  .footer-bottom {
+    order: 3; /* Ensures this is at the bottom */
+  }
+
+  .footer-map iframe {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
+}

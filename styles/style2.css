@@ -1,0 +1,450 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Color scheme */
+:root {
+  --primary-color: #977139; /* Main orange color */
+  --secondary-color: #6D4C41; /* Brown color */
+  --background-color: #FFFFFF; /* White color */
+  --text-color: #333333; /* Dark gray color */
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif; /* Apply Google Font to all text */
+}
+
+/* Header styles */
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1000;
+  height: 600px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold; /* Add font weight for better visibility */
+  padding-left: 10%;
+  color: var(--background-color);
+}
+nav {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  opacity: 0.8;
+}
+
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  align-items: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #120000; /* Set text color to white */
+  color: var(--background-color);
+}
+ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown {
+  position: relative;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+  color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+.dropdown-content a:hover {
+  background-color: var(--secondary-color);
+  color: #120000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hero banner styles */
+.hero-banner {
+  flex: 1;
+  background-image: url('../assets/hero.jpg');
+  background-size: cover;
+  height: 800px; /* Add a fixed height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  text-align: center;
+  color: #fff;
+}
+
+.overlay p {
+  margin-bottom: 10px;
+}
+
+/* Content section styles */
+.content {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content-image {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.content-text {
+  width: 60%;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 20px;
+}
+
+
+#more h2 {
+  font-family: 'Madimi One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#more {
+  display: none;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+
+/* Accordion styles */
+.accordion-container {
+  max-width: 800px;
+}
+
+.accordion {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; /* Add margin-bottom */
+}
+
+.accordion.active, .accordion:hover {
+  background-color: #8D6E63;
+}
+
+.panel {
+  padding: 18px; /* Adjust padding */
+  display: none;
+  background-color: var(--background-color);
+  overflow: hidden;
+  margin-bottom: 10px; /* Add margin-bottom */
+}
+
+.panel p {
+  margin-top: 0;
+}
+
+.panel.show {
+  display: block;
+}
+
+/* Footer styles */
+.about {
+  width: 70%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.container {
+  max-width: 1200px; /* Set maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 0 20px; /* Add padding to the sides */
+}
+h1 {
+  font-size: 36px; /* Larger font size for headings */
+  margin-bottom: 20px; /* Add space below the heading */
+  margin-top: 50px;
+}
+
+p {
+  font-size: 16px; /* Standard font size for paragraphs */
+  line-height: 1.6; /* Set line height for better readability */
+  margin-bottom: 25px; /* Add space below each paragraph */
+}
+.footer-container {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+.footer-column ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-map {
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.map-iframe {
+  width: 100%;
+}
+
+.footer-column.map-container {
+  flex: 2; /* Takes up twice as much space as the other columns */
+  min-width: 300px;
+
+}
+
+.links ul {
+  padding: 0;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  flex:1;
+}
+
+.links ul li {
+  margin-bottom: 10px; /* Add margin-bottom for spacing */
+}
+
+/* Try Your Luck section styles */
+.try-your-luck {
+  max-width: 800px;
+  text-align: center;
+}
+
+.try-your-luck h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  margin: 0 20px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #ccc;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%; /* Ensure image fills the card */
+  height: 100%; /* Ensure image fills the card */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Adjust width of sections */
+.content,
+.try-your-luck,
+.accordion-container
+{
+    width: 80%;
+    margin: 0 auto 90px auto; /* Center the sections horizontally */
+    max-width: 1200px; /* Optionally set a max-width */
+}
+
+
+
+/* contact form */
+
+/* Add styles for the contact form */
+.form {
+  width: 70%;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+  
+}
+form {
+  margin-top: 30px; /* Add space above the form */
+  margin-bottom: 30px; /* Add space below the form */
+  padding: 20px; /* Add padding to the form */
+  background-color: #f9f9f9; /* Light gray background color */
+  border-radius: 10px; /* Rounded corners */
+  width: 100%;
+}
+
+/* Style form labels */
+form label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 10px; /* Add space below each label */
+  font-weight: bold; /* Bold font weight for labels */
+}
+
+/* Style form input fields and textarea */
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%; /* Full width input fields */
+  padding: 10px; /* Add padding to input fields */
+  margin-bottom: 20px; /* Add space below each input field */
+  border: 1px solid #ccc; /* Add border to input fields */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style submit button */
+form input[type="submit"] {
+  width: 100%; /* Full width submit button */
+  padding: 10px; /* Add padding to submit button */
+  background-color: #FFB74D; /* Main orange color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Change submit button color on hover */
+form input[type="submit"]:hover {
+  background-color: #FFA726; /* Lighter orange color on hover */
+}
