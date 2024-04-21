@@ -448,3 +448,7 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #FFA726; /* Lighter orange color on hover */
 }
+
+.weather-info {
+  margin-right: 10px;
+}

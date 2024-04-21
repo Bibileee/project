@@ -49,8 +49,10 @@ moreBtn.addEventListener('click', ()=>{
         try {
             const response = await fetch(apiUrl);
             const data = await response.json();
-            const weatherInfo = `${data.current.temp_c}°C`;
-            document.querySelector('.weather-info').textContent = weatherInfo;
+            const temp = `${data.current.temp_c}°C`;
+            const location = `${data.location.name}`;
+            //const weatherInfo = `${data.current.temp_c}°C, ${data.location.name}`;
+            document.querySelector('.weather-info').textContent = "Temperature in " +location+ " now is "+ temp;
         } catch (error) {
             console.error('Error fetching weather data:', error);
             document.querySelector('.weather-info').textContent = 'Weather unavailable';
